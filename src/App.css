@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app {
+  text-align: center;
+}
+
+.app h1 {
+  margin-bottom: 2rem;
+  color: #4ecca3;
+}
+
+.mode-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mode-tabs button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #16213e;
+  color: #eee;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-tabs button.active {
+  background: #4ecca3;
+  color: #1a1a2e;
+  font-weight: bold;
+}
+
+.content {
+  background: #16213e;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.section h3 {
+  color: #4ecca3;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.file-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.file-input input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0f0f1a;
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+.file-input button,
+.device-controls button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  background: #4ecca3;
+  color: #1a1a2e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.file-input button:hover,
+.device-controls button:hover {
+  opacity: 0.9;
+}
+
+.file-input button:disabled,
+.device-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.device-controls {
+  margin-bottom: 0.75rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #0f0f1a;
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4ecca3;
+  color: #1a1a2e;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.action-btn:hover:not(:disabled) {
+  background: #3db892;
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background: #0f0f1a;
+  color: #4ecca3;
+  font-size: 0.9rem;
+}
